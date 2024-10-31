@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da Topeira</title>
+  <style>
+    #score {
+
+      font-size: 50px;
+      border-style: outset;
+      color: #ecdfdf;
+    }
+
+    #grid {
+      border-style: outset;
+      display: grid;
+      grid-template-columns: repeat(3, 200px);
+      grid-template-rows: repeat(3, 200px);
+      gap: 10px;
+      margin: 10px auto;
+      width: 625px;
+      background-color: none;
+    }
+
+    .cell {
+      position: relative;
+      width: 200px;
+      height: 100px;
+      background-color: rgb(2, 0, 0);
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    .image {
+      padding: 10px;
+      position: absolute;
+      top: absolute;
+      width: 200px;
+      height: 200px;
+      transition: top 0.2s linear;
+
+    }
+    body {
+      background-image: url('topeira_gnd.png');
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <div  id="score">Score: 0 </div>
+
+  <div id="grid"></div>
+
+
+  <script src="script_mask.js"></script>
+</body>
+
+</html>
